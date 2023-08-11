@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h"></h1>
+    <button id="btn1">click me</button>
+    <button id="btn2">again click</button>
+    <button id="btn3">uppercase</button>
+    <button id="btn4">lowercase</button>
+    <button id="btn5">textbold</button>
+    <script>
+        document.getElementById("btn1").onclick=function(){
+            document.getElementById("h").style.color="blue";
+        }
+        document.getElementById("btn2").onclick=function(){
+            document.getElementById("h").style.backgroundColor="pink";
+        }
+        document.getElementById("btn3").onclick=function(){
+            document.getElementById("h").style.textTransform="uppercase";
+        }
+        document.getElementById("btn4").onclick=function(){
+            document.getElementById("h").style.textTransform="lowercase";
+        }
+        document.getElementById("btn5").onclick=function(){
+            document.getElementById("h").style.fontSize="50px";
+        }
+
+        document.getElementById("h").innerHTML="This is my project";
+        document.getElementById("h").style.color="red";
+        document.getElementById("h").style.border="2px solid black";
+        document.getElementById("h").style.backgroundColor="yellow";
+        document.getElementById("h").style.textAlign="center";
+    </script>
+</body>
+</html>
